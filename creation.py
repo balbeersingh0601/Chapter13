@@ -35,6 +35,9 @@ print()
 
 #nested dictionary
 emp={'john':{'age':25,'salary':20000},'Divya':{'age':35,'salary':35000}}
-print(emp)
-
+print("Nested dictionary",emp)
+for k in emp:
+    print("Employees",k)
+    print("Age",str(emp[k]['age']))
+    print("Salary",str(emp[k]['salary']))
 
