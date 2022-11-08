@@ -30,3 +30,21 @@ for i in range(size):
         print("Now dict size is ",len(num))
 
 #12
+dict1={'cat':12,'dog':6,'elephant':23,"bear":20}
+dict2=dict1 #assignment operator
+dict2['elephant']=999
+print(dict1['elephant'])
+
+#12
+dict2=dict1.copy() #using copy method
+dict2['elephant']=999
+print(dict1['elephant'])
+
+#13
+d={'x':10,'y':15,'z':20,'w':15}
+lst=['x','w']
+s=0
+for k,v in d.items():
+    if k in lst:
+        s=s+d[k]
+print(s)
